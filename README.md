@@ -30,7 +30,7 @@ Vulnerability #2: __________________
 
 ## Red
 
-Vulnerability #1: Username Enumeration
+Vulnerability #1: Insecure Direct Object Reference (IDOR)
 
 Vulnerability #2: __________________
 
