@@ -43,8 +43,12 @@ Vulnerability #1: Insecure Direct Object Reference (IDOR)
 - GIF walkthrough: https://github.com/abrown681/week8/blob/master/Insecure%20Direct%20Object%20Reference%20(IDOR).gif
 
 Vulnerability #2: Cross-Site Request Forgery (CSRF)
+- To replicate: use Burp to intercept a user edit request. Once intercepted, send the request to the repeater. In the repeater, change the user's data to anything you'd like (I changed the first name to "HACKER"). Execute the request, and the user's information will be changed on the website. 
+- GIF walkthrough: https://github.com/abrown681/week8/blob/master/Cross-Site%20Request%20Forgery%20(CSRF).gif
 
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Describe any challenges encountered while doing the work.
+
+- It took me a long time to figure out the log in page bolds the incorrect password message when someone inputs a valid username but incorrect password.  
