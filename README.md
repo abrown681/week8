@@ -17,6 +17,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: SQL Injection (SQLi)
+To replicate: go to the public salesperson search page. Click on a salesperson's link. Replace their id number in the url with "' OR SLEEP(5)=0--'". Once you redirect to this new URL, the current page will remain open and you will not get a "person not found" error.
 
 Vulnerability #2: __________________
 
@@ -24,13 +25,16 @@ Vulnerability #2: __________________
 ## Green
 
 Vulnerability #1: Username Enumeration
+To replicate: if you go to log in as a user that exists in the database and input the wrong password, the "log in was unsuccessful message" will be bolded revealing that a user with that name exists. If the username doesn't exist in the database, the message will not be bolded.
 
 Vulnerability #2: Cross-Site Scripting (XSS)
+To replicate: go to the public comments page. As "testuser" with "test@testemail.com" type in the following comment: `<script>alert('testing alert')</script>`. When you access the comments page as an admin, an alert saying "testing alert" will popup.
 
 
 ## Red
 
 Vulnerability #1: Insecure Direct Object Reference (IDOR)
+To replicate: go to the public salesperson search page. Click on a salesperson's link. In the url, replace the id number with either 10 or 11 and you will be directed to user pages that reveal information about hidden users.
 
 Vulnerability #2: __________________
 
