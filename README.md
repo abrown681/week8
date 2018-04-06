@@ -25,7 +25,7 @@ Vulnerability #2: __________________
 
 Vulnerability #1: Username Enumeration
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Scripting (XSS)
 
 
 ## Red
